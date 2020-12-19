@@ -71,7 +71,7 @@ class QuizAppState extends State<QuizApp> {
                 questionIndex: _questionIndex,
                 questions: _questions,
               )
-            : Result(),
+            : Result(_totalScore),
       ),
     );
   }
