@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:QuizApp/quiz.dart';
-import 'package:QuizApp/result.dart';
+import 'package:quiz_app/quiz.dart';
+import 'package:quiz_app/result.dart';
 
 void main() {
   runApp(QuizApp());
@@ -10,8 +10,6 @@ void main() {
 class QuizApp extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    // ignore: todo
-    // TODO: implement createState
     return QuizAppState();
   }
 }
@@ -78,7 +76,10 @@ class QuizAppState extends State<QuizApp> {
                 questionIndex: _questionIndex,
                 questions: _questions,
               )
-            : Result(_totalScore, _resetQuiz),
+            : Result(
+                _totalScore,
+                _resetQuiz,
+              ),
       ),
     );
   }
